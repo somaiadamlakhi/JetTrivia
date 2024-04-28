@@ -1,4 +1,4 @@
-package com.startappz.jettrivia.data
+package com.startappz.jettrivia.model
 
 data class QuestionItem(
     val answer: String,

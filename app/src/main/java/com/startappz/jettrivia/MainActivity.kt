@@ -12,8 +12,12 @@ import com.startappz.jettrivia.ui.theme.JetTriviaTheme
 import dagger.hilt.android.AndroidEntryPoint
 import androidx.activity.compose.setContent
 import androidx.annotation.RequiresApi
+import androidx.hilt.navigation.compose.hiltViewModel
+import androidx.lifecycle.viewmodel.compose.viewModel
+import com.startappz.jettrivia.screens.QuestionViewModel
+import com.startappz.jettrivia.screens.QuestionsScreen
 
-@ExperimentalComposeUiApi
+
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     @RequiresApi(Build.VERSION_CODES.O)
@@ -21,7 +25,9 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
 
         setContent {
+            val addViewModel: QuestionViewModel = hiltViewModel()
             JetTriviaTheme {
+
 
             }
         }

@@ -72,6 +72,7 @@ dependencies {
     //Retrofit
     api(libs.retrofit)
     implementation(libs.retrofit.kotlin.serialization.converter)
+    implementation(libs.retrofit.convertor)
 
     // Local tests: jUnit, coroutines, Android runner
     testImplementation(libs.junit)

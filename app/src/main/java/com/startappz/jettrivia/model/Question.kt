@@ -1,3 +1,3 @@
-package com.startappz.jettrivia.data
+package com.startappz.jettrivia.model
 
 class Question : ArrayList<QuestionItem>()

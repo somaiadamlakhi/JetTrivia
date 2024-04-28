@@ -15,7 +15,7 @@ retrofit = "2.9.0"
 activityCompose = "1.9.0"
 composeBom = "2024.04.01"
 retrofitKotlinSerializationConverter = "1.0.0"
-
+retrofitConvertorVersion = "2.9.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -39,6 +39,7 @@ androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
 androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
 androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
 retrofit-kotlin-serialization-converter = { module = "com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter", version.ref = "retrofitKotlinSerializationConverter" }
+retrofit-convertor = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofitConvertorVersion" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
