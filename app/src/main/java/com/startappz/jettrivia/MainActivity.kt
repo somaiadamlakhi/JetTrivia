@@ -11,6 +11,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.startappz.jettrivia.ui.theme.JetTriviaTheme
 import dagger.hilt.android.AndroidEntryPoint
 import androidx.activity.compose.setContent
+import androidx.activity.viewModels
 import androidx.annotation.RequiresApi
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.viewmodel.compose.viewModel
@@ -25,19 +26,31 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
 
         setContent {
-            val addViewModel: QuestionViewModel = hiltViewModel()
-            JetTriviaTheme {
+            val vm by viewModels<QuestionViewModel>()
 
+            JetTriviaTheme {
+                TriviaHome(vm)
 
             }
         }
     }
 }
 
+@Composable
+fun TriviaHome(viewModel: QuestionViewModel) {
+    Questions(viewModel)
+}
+
+@Composable
+fun Questions(viewModel: QuestionViewModel) {
+    val questions = viewModel.data.value.data?.toMutableList()
+    println(questions?.size)
+}
+
 @Preview(showBackground = true)
 @Composable
 fun DefaultPreview() {
-//    JetTriviaTheme {
-//
-//    }
+    JetTriviaTheme {
+
+    }
 }
