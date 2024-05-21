@@ -3,20 +3,14 @@ package com.startappz.jettrivia
 import android.os.Build
 import android.os.Bundle
 import androidx.activity.ComponentActivity
-import androidx.compose.material3.Surface
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.ExperimentalComposeUiApi
-import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.tooling.preview.Preview
-import com.startappz.jettrivia.ui.theme.JetTriviaTheme
-import dagger.hilt.android.AndroidEntryPoint
 import androidx.activity.compose.setContent
 import androidx.activity.viewModels
 import androidx.annotation.RequiresApi
-import androidx.hilt.navigation.compose.hiltViewModel
-import androidx.lifecycle.viewmodel.compose.viewModel
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.tooling.preview.Preview
 import com.startappz.jettrivia.screens.QuestionViewModel
-import com.startappz.jettrivia.screens.QuestionsScreen
+import com.startappz.jettrivia.ui.theme.JetTriviaTheme
+import dagger.hilt.android.AndroidEntryPoint
 
 
 @AndroidEntryPoint

@@ -1,6 +1,11 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
+
+    kotlin("kapt")
+    id("dagger.hilt.android.plugin")
+//    alias(libs.plugins.hilt.gradle)
+
 //    alias(libs.plugins.app.android.hilt)
 }
 
@@ -85,7 +90,10 @@ dependencies {
     api(libs.junit)
     api(libs.androidx.test.runner)
     api(libs.hilt.android.testing)
+    api(libs.hilt.android.com)
 
+    kapt(libs.hilt.compiler)
+    kapt(libs.androidx.hilt.compiler)
 
 
 }
