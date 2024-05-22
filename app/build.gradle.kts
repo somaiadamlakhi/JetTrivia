@@ -91,6 +91,7 @@ dependencies {
     api(libs.androidx.test.runner)
     api(libs.hilt.android.testing)
     api(libs.hilt.android.com)
+    debugImplementation(libs.ui.tooling)
 
     kapt(libs.hilt.compiler)
     kapt(libs.androidx.hilt.compiler)

@@ -16,6 +16,7 @@ activityCompose = "1.9.0"
 composeBom = "2024.04.01"
 retrofitKotlinSerializationConverter = "1.0.0"
 retrofitConvertorVersion = "2.9.0"
+uiTooling = "1.6.7"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -43,6 +44,7 @@ retrofit-kotlin-serialization-converter = { module = "com.jakewharton.retrofit:r
 retrofit-convertor = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofitConvertorVersion" }
 hilt-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "hilt" }
 androidx-hilt-compiler = { group = "androidx.hilt", name = "hilt-compiler", version = "1.0.0" }
+ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling", version.ref = "uiTooling" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
